@@ -5,10 +5,9 @@ from sklearn.datasets import load_diabetes
 from scipy import stats
 import matplotlib.pyplot as plt
 
-data_diabetes=load_diabetes()
+data_diabetes=load_diabetes()#获取数据集
 data=data_diabetes['data']
 target=data_diabetes['target']
-feature_names=data_diabetes['feature_names']
 X_train,X_test,y_train,y_test=train_test_split(data,target,test_size=0.2,random_state=999)#划分训练集和测试集
 
 
